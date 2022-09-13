@@ -1,0 +1,6 @@
+.locations {
+  display: flex;
+  flex-direction: column;
+  width: 89%;
+  margin: auto;
+}

@@ -1,0 +1,32 @@
+.hero {
+  position: relative;
+  width: 89%;
+  margin: auto;
+  height: 111px;
+  background-image: url('../../assets/heroImg.png');
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 16px;
+}
