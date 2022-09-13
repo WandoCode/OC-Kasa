@@ -5,10 +5,10 @@ function LocationCard(props) {
   const coverImg = props.coverImg
 
   return (
-    <article className="locationCard">
+    <a href="#" className="locationCard">
       <img src={coverImg} alt="" />
       <h2>{title}</h2>
-    </article>
+    </a>
   )
 }
 

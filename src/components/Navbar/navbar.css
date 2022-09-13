@@ -1,0 +1,23 @@
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #ff6060;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+nav a.active-link {
+  text-decoration: underline;
+}
