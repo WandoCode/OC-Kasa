@@ -1,15 +1,25 @@
 import './navbar.css'
-
+import { NavLink } from 'react-router-dom'
 function Navbar() {
   return (
     <nav className="navbar">
       <ul>
         <li>
-          <a href="#">Accueil</a>
+          <NavLink
+            to="/home"
+            className={({ isActive }) => (isActive ? 'active-link' : '')}
+          >
+            Accueil
+          </NavLink>
         </li>
 
         <li>
-          <a href="#">A propos</a>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? 'active-link' : '')}
+          >
+            A propos
+          </NavLink>
         </li>
       </ul>
     </nav>
