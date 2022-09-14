@@ -1,6 +1,7 @@
 .locationInfos {
   width: 89%;
   margin: auto;
+  color: var(--main-color);
 }
 
 .tags {

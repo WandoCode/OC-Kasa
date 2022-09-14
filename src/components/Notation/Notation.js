@@ -8,9 +8,9 @@ function Notation(props) {
   const stars = []
   for (let i = 0; i < 5; i++) {
     if (i < rating) {
-      stars.push(<img src={fullStar} alt="" />)
+      stars.push(<img src={fullStar} alt="" key={i} />)
     } else {
-      stars.push(<img src={star} alt="" />)
+      stars.push(<img src={star} alt="" key={i} />)
     }
   }
 
