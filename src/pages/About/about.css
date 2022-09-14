@@ -1,0 +1,37 @@
+.about {
+  color: var(--main-color);
+}
+.banner {
+  width: 89%;
+  margin: auto;
+  height: 223px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.mask {
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  border-radius: 10px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 89%;
+  margin: 20px auto;
+}

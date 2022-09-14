@@ -3,15 +3,16 @@
   width: 89%;
   margin: auto;
   height: 111px;
-  background-image: url('../../assets/heroImg.png');
-  border-radius: 10px;
   color: white;
   display: flex;
   align-items: center;
 }
+.hero img {
+  border-radius: 10px;
+  width: 100%;
+}
 
-.hero::before {
-  content: '';
+.hero .mask {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +25,7 @@
 }
 
 .hero h1 {
-  z-index: 1;
+  position: absolute;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 500;
