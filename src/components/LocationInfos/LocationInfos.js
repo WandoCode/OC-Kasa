@@ -14,7 +14,7 @@ function LocationInfos(props) {
       <h2>{title}</h2>
       <h3>{location}</h3>
       <section className="tags">{tagsComp}</section>
-      <div>
+      <div className="horizontal-container">
         <Notation rating={rating} />
         <section className="host-infos">
           <h4>{host.name}</h4>

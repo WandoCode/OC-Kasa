@@ -1,9 +1,9 @@
 header {
-  height: 83px;
+  height: 90px;
   display: flex;
-  margin: 0 20px 0 20px;
+  margin: 0 20px 5px 20px;
 }
 
 header img {
-  max-width: 37%;
+  max-width: 43%;
 }

@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import Galery from '../../components/Galery/Galery'
 import LocationInfos from '../../components/LocationInfos/LocationInfos'
 import store from '../../store/location'
+import './location.css'
 function Location() {
   const [location, setLocation] = useState()
   const { id } = useParams()
@@ -23,7 +24,7 @@ function Location() {
   }, [location])
 
   return (
-    <main>
+    <main className="location">
       {location && (
         <>
           <Galery pictures={location.pictures} />
