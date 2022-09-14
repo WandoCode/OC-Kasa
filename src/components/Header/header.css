@@ -2,7 +2,7 @@ header {
   height: clamp(83px, 8vw, 150px);
   display: flex;
   margin: 0 auto 5px auto;
-  width: clamp(0px, 89%, 1240px);
+  width: clamp(0px, 89%, 1440px);
 }
 
 header img {

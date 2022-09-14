@@ -11,15 +11,19 @@ function LocationInfos(props) {
   })
   return (
     <article className="locationInfos">
-      <h2>{title}</h2>
-      <h3>{location}</h3>
-      <section className="tags">{tagsComp}</section>
-      <div className="horizontal-container">
-        <Notation rating={rating} />
-        <section className="host-infos">
-          <h4>{host.name}</h4>
-          <img src={host.picture} alt="" />
-        </section>
+      <div className="container">
+        <div className="container-title">
+          <h2>{title}</h2>
+          <h3>{location}</h3>
+          <section className="tags">{tagsComp}</section>
+        </div>
+        <div className="container-host">
+          <Notation rating={rating} />
+          <section className="host-infos">
+            <h4>{host.name}</h4>
+            <img src={host.picture} alt="" />
+          </section>
+        </div>
       </div>
       <section className="details">
         <Dropdown title="Description" datas={description} />

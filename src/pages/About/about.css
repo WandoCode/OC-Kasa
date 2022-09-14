@@ -2,7 +2,7 @@
   color: var(--main-color);
 }
 .banner {
-  width: clamp(0px, 89%, 1240px);
+  width: clamp(0px, 89%, 1440px);
   margin: auto;
   height: 223px;
   border-radius: 10px;
@@ -37,6 +37,9 @@
 }
 
 @media (min-width: 900px) {
+  .about {
+    min-height: 85vh;
+  }
   .content {
     width: min(1050px, 89%);
   }

@@ -4,5 +4,5 @@
 }
 
 .star {
-  width: 15px;
+  width: clamp(15px, 1.8vw, 30px);
 }

@@ -1,12 +1,13 @@
 .hero {
   position: relative;
-  width: clamp(0px, 89%, 1240px);
+  width: clamp(0px, 89%, 1440px);
   margin: 0 auto 20px auto;
   height: clamp(111px, 100%, 223px);
   color: white;
   display: flex;
   align-items: center;
 }
+
 .hero img {
   border-radius: clamp(10px, 1.5vw, 25px);
   width: 100%;
@@ -36,10 +37,16 @@
   font-weight: 500;
   margin-left: 16px;
 }
+@media (min-width: 900px) {
+  .hero {
+    margin-bottom: 30px;
+  }
+}
 
 @media (min-width: 550px) {
   .hero {
     justify-content: center;
+    margin-bottom: 43px;
   }
 
   .hero h1 {

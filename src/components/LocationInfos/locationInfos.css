@@ -6,16 +6,15 @@
 }
 
 .locationInfos h2 {
-  font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: clamp(18px, 2vw, 36px);
   line-height: 142.6%;
   margin-top: 10px;
 }
+
 .locationInfos h3 {
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: clamp(14px, 1vw, 18px);
   line-height: 142.6%;
   margin-top: 7px;
 }
@@ -28,7 +27,7 @@
   margin-top: 10px;
 }
 
-.horizontal-container {
+.container-host {
   display: flex;
   justify-content: space-between;
   margin: 16px 0;
@@ -39,20 +38,44 @@
   align-items: center;
   gap: 11px;
 }
+
 .host-infos h4 {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: clamp(12px, 1.3vw, 18px);
   line-height: 142.6%;
 }
+
 .host-infos img {
   border-radius: 100%;
-  height: 32px;
+  height: clamp(32px, 3.5vw, 64px);
 }
 
 .details {
   display: flex;
   flex-direction: column;
   gap: 21px;
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .container-host {
+    flex-direction: column;
+  }
+  .host-infos {
+    order: 0;
+  }
+  .notation {
+    order: 1;
+  }
+  .tags {
+    margin-top: 20px;
+  }
+  .locationInfos h2 {
+    margin-top: 30px;
+  }
 }
