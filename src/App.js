@@ -24,12 +24,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route
-            path="home"
-            element={<Home locationsDatas={locationsDatas} />}
-          />
+          <Route index element={<Home locationsDatas={locationsDatas} />} />
           <Route path="about" element={<About />} />
-          <Route path="/location/:id" element={<Location />} />
+          <Route path="location/:id" element={<Location />} />
           <Route path="not-found" element={<PageNotFound />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
