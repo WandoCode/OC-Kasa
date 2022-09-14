@@ -1,13 +1,14 @@
 .locationCard {
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 20px;
-
   background: #ff6060;
+  height: 250px;
 }
 
 .locationCard img {
-  height: 250px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
 }
@@ -16,9 +17,26 @@
   display: flex;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   color: white;
   height: 52px;
-  margin: 0 20px;
+  margin: auto 20px;
+}
+
+@media (min-width: 550px) {
+  .locationCard {
+    height: 290px;
+  }
+  .locationCard img {
+    height: 220px;
+  }
+}
+@media (min-width: 900px) {
+  .locationCard {
+    height: 340px;
+  }
+  .locationCard img {
+    height: 275px;
+  }
 }

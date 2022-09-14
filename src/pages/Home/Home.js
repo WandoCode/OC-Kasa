@@ -1,7 +1,5 @@
-import Header from '../../components/Header/Header'
 import Hero from '../../components/Hero/Hero'
 import LocationCard from '../../components/LocationCard/LocationCard'
-import Footer from '../../components/Footer/Footer'
 import './home.css'
 
 function Home(props) {
@@ -19,10 +17,10 @@ function Home(props) {
   })
 
   return (
-    <>
+    <main className="home">
       <Hero />
       <section className="locations">{locationCards}</section>
-    </>
+    </main>
   )
 }
 

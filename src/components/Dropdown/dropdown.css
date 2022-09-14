@@ -1,6 +1,3 @@
-.dropdown {
-}
-
 .dropdown button {
   width: 100%;
   background-color: var(--main-color);
@@ -11,6 +8,7 @@
   align-items: center;
   padding: 6px 12px;
   border-radius: 5px;
+  font-size: clamp(12px, 1.5vw, 24px);
 }
 
 .arrow-up {
@@ -30,9 +28,15 @@
 .filling {
   padding: 12px 12px 2px 12px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: clamp(12px, 1.5vw, 24px);
   font-weight: 400;
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+@media (min-width: 900px) {
+  .filling {
+    padding: 27px 27px 20px 18px;
+  }
 }

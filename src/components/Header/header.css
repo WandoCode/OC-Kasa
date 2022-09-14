@@ -1,9 +1,11 @@
 header {
-  height: 90px;
+  height: clamp(83px, 8vw, 150px);
   display: flex;
-  margin: 0 20px 5px 20px;
+  margin: 0 auto 5px auto;
+  width: clamp(0px, 89%, 1240px);
 }
 
 header img {
   max-width: 43%;
+  min-width: 15%;
 }

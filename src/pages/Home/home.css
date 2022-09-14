@@ -1,6 +1,28 @@
 .locations {
   display: flex;
   flex-direction: column;
-  width: 89%;
+  width: clamp(0px, 89%, 1440px);
   margin: auto;
+  gap: clamp(20px, 3.5vw, 60px);
+}
+
+@media (min-width: 550px) {
+  .locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 900px) {
+  .locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+  }
 }

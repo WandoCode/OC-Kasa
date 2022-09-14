@@ -13,11 +13,17 @@ nav a {
   text-transform: uppercase;
   color: #ff6060;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: clamp(12px, 1.6vw, 17px);
   font-weight: 500;
   margin-left: 15px;
 }
 
 nav a.active-link {
   text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+  nav a {
+    margin-left: 57px;
+  }
 }

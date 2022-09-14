@@ -9,16 +9,16 @@
 }
 .page-not-found h2 {
   font-weight: 700;
-  font-size: 96px;
+  font-size: clamp(96px, 25vw, 220px);
   text-align: center;
 }
 .page-not-found h3 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: clamp(18px, 2vw, 30px);
   text-align: center;
 }
 .page-not-found a {
   font-weight: 500;
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 18px);
   text-decoration: underline;
 }

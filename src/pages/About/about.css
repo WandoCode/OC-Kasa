@@ -2,7 +2,7 @@
   color: var(--main-color);
 }
 .banner {
-  width: 89%;
+  width: clamp(0px, 89%, 1240px);
   margin: auto;
   height: 223px;
   border-radius: 10px;
@@ -31,7 +31,13 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: clamp(20px, 2vw, 33px);
   width: 89%;
-  margin: 20px auto;
+  margin: clamp(20px, 2vw, 33px) auto;
+}
+
+@media (min-width: 900px) {
+  .content {
+    width: min(1050px, 89%);
+  }
 }

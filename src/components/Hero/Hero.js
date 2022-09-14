@@ -6,7 +6,7 @@ function Hero() {
       <img src={image} alt="" />
       <div className="mask"></div>
       <h1>
-        Chez vous, <br /> partout et ailleurs
+        <span>Chez vous, &nbsp;</span> <span>partout et ailleurs</span>
       </h1>
     </section>
   )

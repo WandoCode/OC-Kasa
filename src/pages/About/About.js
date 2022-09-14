@@ -16,5 +16,5 @@ function About() {
     </main>
   )
 }
-
+// TODO: gérer le changement de photo
 export default About

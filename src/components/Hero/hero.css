@@ -1,15 +1,18 @@
 .hero {
   position: relative;
-  width: 89%;
-  margin: auto;
-  height: 111px;
+  width: clamp(0px, 89%, 1240px);
+  margin: 0 auto 20px auto;
+  height: clamp(111px, 100%, 223px);
   color: white;
   display: flex;
   align-items: center;
 }
 .hero img {
-  border-radius: 10px;
+  border-radius: clamp(10px, 1.5vw, 25px);
   width: 100%;
+  min-height: 111px;
+  max-height: 223px;
+  object-fit: cover;
 }
 
 .hero .mask {
@@ -21,13 +24,25 @@
   background: #000000;
   mix-blend-mode: darken;
   opacity: 0.3;
-  border-radius: 10px;
+  border-radius: clamp(10px, 1.5vw, 25px);
 }
 
 .hero h1 {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: clamp(24px, 4vw, 48px);
   font-weight: 500;
   margin-left: 16px;
+}
+
+@media (min-width: 550px) {
+  .hero {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    flex-direction: row;
+  }
 }
