@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import Galery from '../../components/Galery/Galery'
 import store from '../../store/location'
 function Location() {
   const [location, setLocation] = useState()
@@ -19,7 +20,16 @@ function Location() {
       navigate('/not-found')
     }
   }, [location])
-  return <section>{location && <>{location.title}</>}</section>
+
+  return (
+    <main>
+      {location && (
+        <>
+          <Galery pictures={location.pictures} />
+        </>
+      )}
+    </main>
+  )
 }
 
 export default Location
