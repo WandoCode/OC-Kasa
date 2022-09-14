@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import Galery from '../../components/Galery/Galery'
+import LocationInfos from '../../components/LocationInfos/LocationInfos'
 import store from '../../store/location'
 function Location() {
   const [location, setLocation] = useState()
@@ -26,6 +27,7 @@ function Location() {
       {location && (
         <>
           <Galery pictures={location.pictures} />
+          <LocationInfos infos={location} />
         </>
       )}
     </main>
