@@ -1,14 +1,15 @@
 import './locationCard.css'
-
+import { Link } from 'react-router-dom'
 function LocationCard(props) {
   const title = props.title
   const coverImg = props.coverImg
+  const locationURL = `/location/${props.id}`
 
   return (
-    <a href="#" className="locationCard">
+    <Link to={locationURL} className="locationCard">
       <img src={coverImg} alt="" />
       <h2>{title}</h2>
-    </a>
+    </Link>
   )
 }
 
