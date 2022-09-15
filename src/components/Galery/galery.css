@@ -22,6 +22,7 @@
 button.prev-btn {
   top: 50%;
   left: 2%;
+  transform: translateY(-50%);
 }
 
 .btn-img {
@@ -32,4 +33,5 @@ button.prev-btn {
 button.next-btn {
   top: 50%;
   right: 2%;
+  transform: translateY(-50%);
 }

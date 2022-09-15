@@ -6,6 +6,7 @@ function Galery(props) {
   const pictures = props.pictures
   const [currImg, setCurrImg] = useState(0)
   const [image, setImage] = useState()
+
   useEffect(() => {
     setImage(
       <>
@@ -28,13 +29,17 @@ function Galery(props) {
 
   return (
     <section className="galery">
-      <button className="prev-btn" onClick={handlePrevImg}>
-        <img className="btn-img" src={prev} alt="" />
-      </button>
+      {pictures.length > 1 && (
+        <button className="prev-btn" onClick={handlePrevImg}>
+          <img className="btn-img" src={prev} alt="" />
+        </button>
+      )}
       {image}
-      <button className="next-btn" onClick={handleNextImg}>
-        <img className="btn-img" src={next} alt="" />
-      </button>
+      {pictures.length > 1 && (
+        <button className="next-btn" onClick={handleNextImg}>
+          <img className="btn-img" src={next} alt="" />
+        </button>
+      )}
     </section>
   )
 }
