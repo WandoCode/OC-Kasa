@@ -16,5 +16,6 @@
 @media (min-width: 900px) {
   .tag {
     min-width: 115px;
+    border-radius: 10px;
   }
 }

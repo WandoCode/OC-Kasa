@@ -5,9 +5,9 @@ import './galery.css'
 function Galery(props) {
   const pictures = props.pictures
   const [currImg, setCurrImg] = useState(0)
-  const [images, setImages] = useState()
+  const [image, setImage] = useState()
   useEffect(() => {
-    setImages(
+    setImage(
       <>
         <img className="galery-img" src={pictures.at(currImg)} alt="" />
       </>
@@ -31,7 +31,7 @@ function Galery(props) {
       <button className="prev-btn" onClick={handlePrevImg}>
         <img className="btn-img" src={prev} alt="" />
       </button>
-      {images}
+      {image}
       <button className="next-btn" onClick={handleNextImg}>
         <img className="btn-img" src={next} alt="" />
       </button>

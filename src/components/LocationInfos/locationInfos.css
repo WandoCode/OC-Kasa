@@ -1,6 +1,4 @@
 .locationInfos {
-  width: 89%;
-  margin: auto;
   color: var(--main-color);
   font-family: 'Montserrat', sans-serif;
 }
@@ -55,10 +53,11 @@
   display: flex;
   flex-direction: column;
   gap: 21px;
+  margin-bottom: 70px;
 }
 
 @media (min-width: 900px) {
-  .container {
+  .locationInfos .container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
@@ -77,5 +76,14 @@
   }
   .locationInfos h2 {
     margin-top: 30px;
+  }
+  .container-host {
+    margin-top: 24px;
+  }
+  .details {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 70px;
   }
 }

@@ -8,14 +8,19 @@
   align-items: center;
   padding: 6px 12px;
   border-radius: 5px;
-  font-size: clamp(12px, 1.5vw, 24px);
+  font-size: clamp(12px, 1.5vw, 18px);
+  height: clamp(30px, 2.6vw, 52px);
 }
 
 .arrow-up {
+  width: clamp(15px, 1.4vw, 26px);
+  height: auto;
   transform: rotateX(180deg);
   transition: 0.2s;
 }
 .arrow-down {
+  width: clamp(15px, 1.4vw, 26px);
+  height: auto;
   transform: rotateX(0deg);
   transition: 0.2s;
 }
@@ -23,20 +28,30 @@
 .dropdown-show {
   background-color: #f7f7f7;
   border-radius: 0 0 5px 5px;
+  height: 100%;
 }
 
 .filling {
   padding: 12px 12px 2px 12px;
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(12px, 1.5vw, 24px);
+  font-size: clamp(12px, 1.5vw, 18px);
   font-weight: 400;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  height: 100%;
 }
 
 @media (min-width: 900px) {
+  .dropdown {
+    flex-basis: 100%;
+  }
+
   .filling {
     padding: 27px 27px 20px 18px;
+  }
+
+  .dropdown button {
+    border-radius: 10px;
   }
 }

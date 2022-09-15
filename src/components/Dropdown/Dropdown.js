@@ -29,7 +29,7 @@ function Dropdown(props) {
       <button onClick={handBtnClick}>
         {title} <img className={'arrow ' + arrowDirection} src={arrow} alt="" />
       </button>
-      <div className="dropdown-show">{showFilling && filling}</div>
+      {showFilling && <div className="dropdown-show">{filling}</div>}
     </article>
   )
 }

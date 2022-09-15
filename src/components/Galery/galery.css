@@ -1,19 +1,15 @@
 .galery {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   position: relative;
-}
-
-.galery {
   display: flex;
   justify-content: center;
 }
 
 .galery .galery-img {
-  min-width: 89vw;
-  height: 68vw;
+  width: 100%;
+  height: clamp(255px, 68vw, 415px);
   object-fit: cover;
-  margin: 0 5vw;
   border-radius: 10px;
 }
 
@@ -21,16 +17,19 @@
   position: absolute;
   background: none;
   border: none;
-  height: 20px;
-  width: 12px;
 }
 
 button.prev-btn {
   top: 50%;
-  left: 7%;
+  left: 2%;
+}
+
+.btn-img {
+  height: clamp(20px, 4.3vw, 80px);
+  width: auto;
 }
 
 button.next-btn {
   top: 50%;
-  right: 7%;
+  right: 2%;
 }
