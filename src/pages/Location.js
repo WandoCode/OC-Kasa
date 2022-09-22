@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import Galery from '../../components/Galery/Galery'
-import LocationInfos from '../../components/LocationInfos/LocationInfos'
-import store from '../../store/location'
+import Galery from '../components/Galery'
+import LocationInfos from '../components/LocationInfos'
+import store from '../store/location'
 function Location() {
   const [location, setLocation] = useState()
   const { id } = useParams()

@@ -1,5 +1,5 @@
-import star from '../../assets/star.svg'
-import fullStar from '../../assets/full-star.svg'
+import star from '../assets/star.svg'
+import fullStar from '../assets/full-star.svg'
 
 function Notation(props) {
   const { rating } = props

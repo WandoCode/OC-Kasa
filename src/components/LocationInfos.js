@@ -1,6 +1,6 @@
-import Dropdown from '../Dropdown/Dropdown'
-import Notation from '../Notation/Notation'
-import Tag from '../Tag/Tag'
+import Dropdown from './Dropdown'
+import Notation from './Notation'
+import Tag from './Tag'
 
 function LocationInfos(props) {
   const { title, description, host, rating, location, equipments, tags } =

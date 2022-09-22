@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import store from '../../store/location'
-import Hero from '../../components/Hero/Hero'
-import LocationCard from '../../components/LocationCard/LocationCard'
+import store from '../store/location'
+import Hero from '../components/Hero'
+import LocationCard from '../components/LocationCard'
 
-function Home(props) {
+function Home() {
   const [locationsDatas, setLocationsDatas] = useState([])
 
   useEffect(() => {

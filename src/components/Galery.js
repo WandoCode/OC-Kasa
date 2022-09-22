@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import prev from '../../assets/prev.svg'
-import next from '../../assets/next.svg'
+import prev from '../assets/prev.svg'
+import next from '../assets/next.svg'
 
 function Galery(props) {
   const pictures = props.pictures

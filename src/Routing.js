@@ -1,9 +1,9 @@
-import Home from './pages/Home/Home'
-import Location from './pages/Location/Location'
-import PageNotFound from './pages/PageNotFound/PageNotFound'
+import Home from './pages/Home'
+import Location from './pages/Location'
+import PageNotFound from './pages/PageNotFound'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import About from './pages/About/About'
-import Layout from './components/Layout/Layout'
+import About from './pages/About'
+import Layout from './components/Layout'
 
 function Routing() {
   return (

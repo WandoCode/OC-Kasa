@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import arrow from '../../assets/down.svg'
+import arrow from '../assets/down.svg'
 
 function Dropdown(props) {
   const { datas, title } = props
