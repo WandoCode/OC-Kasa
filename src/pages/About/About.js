@@ -1,4 +1,3 @@
-import './about.css'
 import image from '../../assets/aboutImg.png'
 import Dropdown from '../../components/Dropdown/Dropdown'
 import text from '../../assets/aboutText.json'

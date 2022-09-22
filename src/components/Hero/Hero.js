@@ -1,5 +1,5 @@
-import './hero.css'
 import image from '../../assets/heroImg.png'
+
 function Hero() {
   return (
     <section className="hero">

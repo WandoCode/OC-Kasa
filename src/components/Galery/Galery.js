@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import prev from '../../assets/prev.svg'
 import next from '../../assets/next.svg'
-import './galery.css'
+
 function Galery(props) {
   const pictures = props.pictures
   const [currImg, setCurrImg] = useState(0)

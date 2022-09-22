@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import arrow from '../../assets/down.svg'
-import './dropdown.css'
 
 function Dropdown(props) {
   const { datas, title } = props

@@ -1,7 +1,7 @@
 import Dropdown from '../Dropdown/Dropdown'
 import Notation from '../Notation/Notation'
 import Tag from '../Tag/Tag'
-import './locationInfos.css'
+
 function LocationInfos(props) {
   const { title, description, host, rating, location, equipments, tags } =
     props.infos

@@ -1,4 +1,3 @@
-import './notation.css'
 import star from '../../assets/star.svg'
 import fullStar from '../../assets/full-star.svg'
 

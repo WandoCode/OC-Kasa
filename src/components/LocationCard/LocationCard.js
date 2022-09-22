@@ -1,4 +1,3 @@
-import './locationCard.css'
 import { Link } from 'react-router-dom'
 function LocationCard(props) {
   const title = props.title
