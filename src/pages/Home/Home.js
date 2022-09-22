@@ -1,9 +1,19 @@
+import { useState, useEffect } from 'react'
+import store from '../../store/location'
 import Hero from '../../components/Hero/Hero'
 import LocationCard from '../../components/LocationCard/LocationCard'
 import './home.css'
 
 function Home(props) {
-  const locationsDatas = props.locationsDatas || []
+  const [locationsDatas, setLocationsDatas] = useState([])
+
+  useEffect(() => {
+    const getLocationsDatas = async () => {
+      const locationsArr = await store.getLocationList()
+      setLocationsDatas(locationsArr)
+    }
+    getLocationsDatas()
+  }, [])
 
   const locationCards = locationsDatas.map((location) => {
     return (
