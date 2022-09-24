@@ -1,33 +1,40 @@
 .locationCard {
+  height: 250px;
+
   display: flex;
   flex-direction: column;
+
   border-radius: 10px;
   overflow: hidden;
   background: #ff6060;
-  height: 250px;
 }
 
 .locationCard img {
   height: 200px;
   width: 100%;
+
   object-fit: cover;
 }
 
 .locationCard h2 {
+  height: 52px;
+
   display: flex;
   align-items: center;
+
+  margin: auto 20px;
+
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: white;
-  height: 52px;
-  margin: auto 20px;
 }
 
 @media (min-width: 550px) {
   .locationCard {
     height: 290px;
   }
+
   .locationCard img {
     height: 220px;
   }
@@ -36,6 +43,7 @@
   .locationCard {
     height: 340px;
   }
+
   .locationCard img {
     height: 275px;
   }

@@ -1,5 +1,6 @@
 nav {
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -10,12 +11,13 @@ nav ul {
 }
 
 nav a {
+  margin-left: 15px;
+
   text-transform: uppercase;
   color: #ff6060;
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(12px, 1.6vw, 17px);
   font-weight: 500;
-  margin-left: 15px;
 }
 
 nav a.active-link {

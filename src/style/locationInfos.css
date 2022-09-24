@@ -1,20 +1,22 @@
 .locationInfos {
-  color: var(--main-color);
   font-family: 'Montserrat', sans-serif;
+  color: var(--main-color);
 }
 
 .locationInfos h2 {
+  margin-top: 10px;
+
   font-weight: 500;
   font-size: clamp(18px, 2vw, 36px);
   line-height: 142.6%;
-  margin-top: 10px;
 }
 
 .locationInfos h3 {
+  margin-top: 7px;
+
   font-weight: 500;
   font-size: clamp(14px, 1vw, 18px);
   line-height: 142.6%;
-  margin-top: 7px;
 }
 
 .tags {
@@ -22,12 +24,14 @@
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 10px;
+
   margin-top: 10px;
 }
 
 .container-host {
   display: flex;
   justify-content: space-between;
+
   margin: 16px 0;
 }
 
@@ -45,14 +49,16 @@
 }
 
 .host-infos img {
-  border-radius: 100%;
   height: clamp(32px, 3.5vw, 64px);
+
+  border-radius: 100%;
 }
 
 .details {
   display: flex;
   flex-direction: column;
   gap: 21px;
+
   margin-bottom: 70px;
 }
 
@@ -60,26 +66,34 @@
   .locationInfos .container {
     display: flex;
     justify-content: space-between;
+
     margin-bottom: 24px;
   }
+
   .container-host {
     flex-direction: column;
   }
+
   .host-infos {
     order: 0;
   }
+
   .notation {
     order: 1;
   }
+
   .tags {
     margin-top: 20px;
   }
+
   .locationInfos h2 {
     margin-top: 30px;
   }
+
   .container-host {
     margin-top: 24px;
   }
+
   .details {
     display: flex;
     flex-direction: row;

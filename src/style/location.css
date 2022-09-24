@@ -1,4 +1,5 @@
 .location {
   width: clamp(0px, 89%, 1440px);
+
   margin: 0 auto;
 }

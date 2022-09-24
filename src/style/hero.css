@@ -1,27 +1,35 @@
 .hero {
   position: relative;
+
   width: clamp(0px, 89%, 1440px);
-  margin: 0 auto 20px auto;
   height: clamp(111px, 100%, 223px);
-  color: white;
+
   display: flex;
   align-items: center;
+
+  margin: 0 auto 20px auto;
+
+  color: white;
 }
 
 .hero img {
-  border-radius: clamp(10px, 1.5vw, 25px);
   width: 100%;
   min-height: 111px;
   max-height: 223px;
+
   object-fit: cover;
+
+  border-radius: clamp(10px, 1.5vw, 25px);
 }
 
 .hero .mask {
   position: absolute;
   top: 0;
   left: 0;
+
   height: 100%;
   width: 100%;
+
   background: #000000;
   mix-blend-mode: darken;
   opacity: 0.3;
@@ -30,13 +38,17 @@
 
 .hero h1 {
   position: absolute;
+
   display: flex;
   flex-direction: column;
+
+  margin-left: 16px;
+
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(24px, 4vw, 48px);
   font-weight: 500;
-  margin-left: 16px;
 }
+
 @media (min-width: 900px) {
   .hero {
     margin-bottom: 30px;
@@ -46,6 +58,7 @@
 @media (min-width: 550px) {
   .hero {
     justify-content: center;
+
     margin-bottom: 43px;
   }
 

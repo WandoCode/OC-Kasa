@@ -1,15 +1,18 @@
 .tag {
   min-width: 73px;
   height: clamp(18px, 1.5vw, 25px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   padding: 0 8px;
-  background: #ff6060;
+
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: clamp(10px, 1.1vw, 14px);
   font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  background: #ff6060;
   border-radius: 5px;
 }
 

@@ -1,9 +1,11 @@
 .locations {
+  width: clamp(0px, 89%, 1440px);
+
   display: flex;
   flex-direction: column;
-  width: clamp(0px, 89%, 1440px);
-  margin: auto;
   gap: clamp(20px, 3.5vw, 60px);
+
+  margin: auto;
 }
 
 @media (min-width: 550px) {
@@ -21,7 +23,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
+
     padding: 50px;
+
     background-color: #f6f6f6;
     border-radius: 25px;
   }
