@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+
 import store from '../store/location'
 import Hero from '../components/Hero'
 import LocationCard from '../components/LocationCard'
@@ -11,6 +12,7 @@ function Home() {
       const locationsArr = await store.getLocationList()
       setLocationsDatas(locationsArr)
     }
+
     getLocationsDatas()
   }, [])
 

@@ -1,10 +1,14 @@
 import { useState } from 'react'
+
 import arrow from '../assets/down.svg'
 
 function Dropdown(props) {
   const { datas, title } = props
+
   const [arrowDirection, setArrowDirection] = useState('arrow-down')
   const [showFilling, setShowFilling] = useState(false)
+
+  // Prepare the text displayed in dropdown
   let filling
   if (Array.isArray(datas)) {
     filling = (
@@ -17,12 +21,15 @@ function Dropdown(props) {
   } else {
     filling = <p className="filling">{datas}</p>
   }
+
   const handBtnClick = () => {
     const newDirection =
       arrowDirection === 'arrow-down' ? 'arrow-up' : 'arrow-down'
     setArrowDirection(newDirection)
+
     showFilling ? setShowFilling(false) : setShowFilling(true)
   }
+
   return (
     <article className="dropdown">
       <button onClick={handBtnClick}>

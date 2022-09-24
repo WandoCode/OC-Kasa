@@ -9,6 +9,7 @@ function LocationInfos(props) {
   const tagsComp = tags.map((tag) => {
     return <Tag text={tag} key={tag} />
   })
+
   return (
     <article className="locationInfos">
       <div className="container">
